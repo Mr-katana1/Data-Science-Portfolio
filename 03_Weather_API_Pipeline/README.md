@@ -9,7 +9,7 @@ This project is an automated data pipeline that connects to a public API, show h
 
 ## Key Engineering Challenges Solved
 1. **JSON Payload Unpacking:** Extracted nested dictionary structures from whether API responses to flatten multi-variable hourly arrays into a structured Pandas DataFrame.
-2. **Datetime Transformation:** Converted raw object string timestamps into native datetime and enabling time-series featurs ('.dt.date' and '.dt.hour')
+2. **Datetime Transformation:** Converted raw object string timestamps into native datetime and enabling time-series featurs (`.dt.date` and `.dt.hour`)
 3. **Multi-Metric Dictionary Aggregations:** Using Pandas `.groupby().agg()` with dictionary mapping to Calculate distinct statistical metrics (mean temperatures vs MAX wind speeds) in a single pass
 
 ## Final Analytical Takeaway
